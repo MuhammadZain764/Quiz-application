@@ -31,7 +31,9 @@
     <div class="startButton">
         <button class="btn btn-success btn-lg"  onclick="quizStart()">Start Quiz</button>
     </div>
-    
+    <div class="backButton">
+        <button class="btn btn-danger btn-lg"  onclick="goBack()">Go back</button>
+    </div>
 
 
     <section class="quizWrapper">
@@ -53,17 +55,18 @@
         </div>
         <div class="quizBody">
 
-            <div>
+            <div id="quizQues">
              <b>Ques1:  What does HTML stand for?</b> 
 
 
             </div>
-            <div>
-                <ul>
+            <div >
+                <ul id="quizOption">
                     
                     <li>Hyper Text Mark up language.</li>
                     <li>Home Tool Mark up language.</li>
                     <li>Hyper link Markup language.</li>
+                    <li>Hyper text scripting language</li>
 
                 </ul>
             </div>
@@ -74,10 +77,18 @@
                 <p>1/7</p>
             </div>
             <div>
-                <button class="nextButton btn btn-primary">NEXT</button>
+                <button class="nextButton btn btn-primary" id="nextBtn" onclick="nextButton()">NEXT</button>
             </div>
         </div>
 
+
+    </section>
+
+    <section class="resultWrapper">
+        <h1>Total Questions: <span id="totalQues"></span></h1>
+        <h1>Correct Questions:<span id="correctQues"></span></h1>
+        <h1>Wrong Questions: <span id="wrongQues"></span></h1>
+        <h1>Total Score: <span id="totalScore"></span></h1>
 
     </section>
 
