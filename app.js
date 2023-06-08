@@ -127,13 +127,13 @@ var backButton = document.querySelector(".backButton")
 
 
 
-    //  for (var input of inputFields) {
-    //      console.log("input", input.value)
-    //      if (!input.value) {
-    //          alert("Enter required fields")
-    //          return
-    //      }
-    //  }
+     for (var input of inputFields) {
+         console.log("input", input.value)
+         if (!input.value) {
+             alert("Enter required fields")
+             return
+         }
+     }
  
 
 
