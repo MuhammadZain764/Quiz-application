@@ -5,33 +5,53 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(128, 232, 198);
+    background: #0E436E;
 }
 .formWrapper {
-    min-height: 100vh;
+    width: 90%;
+    height: 300px;
+    max-width: 500px;
+    margin: 70px auto 0;
+    border-radius: 10px;
+    padding: 20px;
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* border: 1px solid rgb(215, 204, 204); */
+    color: #fff;
+
+}
+.formWrapper h2{
+    font-size: 35px;
 }
 
 
 .startButton {
+    
     min-height: 100vh;
     display: flex;
     justify-content:center;
     align-items: center;
     display: none;
+    /* width: 100px;
+    height: 100px; */
+    position: absolute;
+    left: 750px;
+   
 }
 .backButton {
     position: absolute;
     top:0;
-    left:550px;
+    left:580px;
     min-height: 100vh;
     display: flex;
     justify-content:center;
     align-items: center;
     display: none;
+    /* width: 100px; */
+
 }
 
 
@@ -43,6 +63,12 @@ body{
     border: 1px solid black;
     display: none;
     background-color: white;
+    max-width: 500px;
+    margin: 70px auto 0;
+    border-radius: 10px;
+    padding: 20px;
+    min-height: 70vh;
+    
 }
 
 .quizHeader {
@@ -90,16 +116,21 @@ body{
     margin-top: 5px;
 }
 .correctAnswer{
-    background-color: green;
+    background-color:#9aeabc;
 }
 .wrongAnswer{
-    background-color: red;
+    background-color:#ff9393;
 }
 .disableLi{
     pointer-events: none;
 }
 .resultWrapper {
     display: none;
+    color: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
 
 }
 
@@ -108,14 +139,25 @@ body{
     body{
         overflow-x: hidden;
     }
+    .formWrapper {
+        width: 90%;
+        height: 300px;
+        max-width: 500px;
+        margin: 70px auto 0;
+        border-radius: 10px;
+        padding: 20px;
+        min-height: 70vh;
+    }
 
     .startButton{
         position: absolute;
         right:400px;
+        
     }
     .backButton{
         position: absolute;
         left: 300px;
+        
     }
   }
   @media only screen and (max-width: 768px) {

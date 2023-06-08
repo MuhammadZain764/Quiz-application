@@ -138,6 +138,7 @@ var backButton = document.querySelector(".backButton")
 
 
      formWrapper.style.display = "none"
+     
      startButton.style.display = "flex"
      backButton.style.display = "flex"
 
